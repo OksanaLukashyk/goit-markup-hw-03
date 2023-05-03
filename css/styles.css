@@ -1,0 +1,194 @@
+/* header bgc rgba(231, 233, 252, 1) */
+/* +hero background-color: #2E2F42; */
+/* p color: #434455; */
+/*+ (section-title) h2, h3 color color: #2E2F42;*/
+/* + h1 color #ffffff */
+/* +footer logo studio color: #f4f4fd */
+/* +footer and header logo web color: #4d5ae5; */
+/* +header logo studio color: #2e2f42; */
+/* navigation color: #2e2f42; */
+/* + (in body) header contacts color: #434455; */
+/* footer p color: #F4F4FD;  */
+/* our team background-color: #F4F4FD;*/
+/* + body bgc #ffffff */
+/* Filter Btn Active background: rgba(64, 75, 191, 1);*/
+/* Active Button Text color#ffffff) */
+/* not active Filter Btn  bgc rgba(244, 244, 253, 1))*/
+/* not active btn text color rgba(77, 90, 229, 1) */
+/* 'Roboto' 400 500 700
+'Raleway' 800 */
+
+:root {
+  --accent-color: #404bbf; /*active hover focus*/
+  --light-accent-color: #4d5ae5; /*brand, not CTA btn-hero/btn-portfolio-text*/
+  --primary-dark-color: #2e2f42; /*h2/h3 headers, hero-bgc*/
+  --primary-text-color: #434455; /*default text color, paragraphs*/
+  --primary-white-color: #ffffff; /*page default bgc, hero header+btn-text, portfolio CTA btn-text*/
+  --light-mode-color: #f4f4fd; /*footer paragraph,brand,not CTA btn-portfolio-bgc,our team bgc*/
+}
+
+/* Common styles */
+
+body {
+  background-color: var(--primary-white-color);
+  color: var(--primary-text-color); /*default text color, paragraphs*/
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px; /*default size, paragraphs*/
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  font-weight: 400;
+}
+
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.title {
+  color: var(--primary-dark-color);
+}
+/* h2,
+h3 {
+  color: var(--primary-dark-color);
+} */
+
+/* Logo */
+.logo {
+  color: var(--light-accent-color);
+  font-family: 'Raleway', sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.logo .accent {
+  color: var(--primary-dark-color);
+}
+
+.logo .footer {
+  color: var(--light-mode-color);
+}
+
+/* Site navigation */
+
+.site-nav .link {
+  color: var(--primary-dark-color);
+  font-weight: 500;
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--accent-color);
+}
+
+/* .site-nav .link.current {
+  color: var(--accent-color);
+} */
+
+/* Header contacts*/
+.contacts {
+  font-style: normal;
+}
+.contacts .link {
+  color: var(--primary-text-color);
+}
+
+.contacts .link:hover,
+.contacts .link:focus {
+  color: var(--accent-color);
+}
+
+/*Footer*/
+.footer {
+  background-color: var(--primary-dark-color);
+}
+.footer .description {
+  color: var(--light-mode-color);
+}
+
+/* Buttons */
+.button {
+  color: var(--primary-text-color);
+  background-color: var(--primary-white-color);
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+}
+
+/*Hero Button*/
+.button.primary {
+  color: var(--primary-white-color);
+  background-color: var(--light-accent-color);
+}
+
+/*Other Buttons*/
+.button.secondary {
+  color: var(--light-accent-color);
+  background-color: var(--light-mode-color);
+}
+
+.button:hover,
+.button:focus {
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
+}
+
+/* index.html styles */
+/* Hero */
+.hero {
+  background-color: var(--primary-dark-color);
+}
+
+.hero-title {
+  color: var(--primary-white-color);
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 1.07;
+  text-align: center;
+  letter-spacing: 0.02em;
+}
+
+/* Section */
+.section-title {
+  color: var(--primary-dark-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  text-transform: capitalize;
+  letter-spacing: 0.02em;
+}
+
+.subsection-title {
+  color: var(--primary-dark-color);
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+}
+.section.team {
+  background-color: var(--light-mode-color);
+}
+.team .subsection-title {
+  text-align: center;
+  letter-spacing: 0.02em;
+}
+
+.team .description {
+  text-align: center;
+}
+.team-member {
+  background-color: var(--primary-white-color);
+}
+.portfolio .description {
+  color: var(--primary-text-color);
+}
