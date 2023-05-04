@@ -263,6 +263,7 @@ OR
   gap: 40px;
 }
 .header-contacts .link {
+  font-style: normal;
   display: block;
 
   color: var(--primary-text-color);
