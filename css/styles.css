@@ -125,6 +125,9 @@ img {
   text-transform: uppercase;
 }
 
+.main-nav .logo {
+  margin-right: 76px;
+}
 .logo .accent-header {
   color: var(--primary-dark-color);
 }
@@ -143,8 +146,13 @@ img {
 
 /*Hero Button*/
 .button.primary {
+  display: block;
   padding: 16px 32px;
   min-width: 169px;
+  height: 56px;
+  margin-left: auto;
+  margin-right: auto;
+  border: none;
 
   color: var(--primary-white-color);
   background-color: var(--light-accent-color);
@@ -210,7 +218,7 @@ header {
 
 .site-nav {
   display: flex;
-  margin-left: 76px;
+  /* margin-left: 76px; */
   gap: 40px;
 }
 
@@ -279,6 +287,9 @@ OR
 
 .hero-title {
   margin-bottom: 48px;
+  max-width: 496px;
+  margin-left: auto;
+  margin-right: auto;
 
   color: var(--primary-white-color);
   font-weight: 700;
